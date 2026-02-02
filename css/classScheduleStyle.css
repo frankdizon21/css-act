@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Color classes */
+.lightblue { background-color: lightblue; }
+.lightgreen { background-color: lightgreen; }
+.lavender { background-color: lavender; }
+.lightcoral { background-color: lightcoral; }
+.lightyellow { background-color: lightyellow; }
+.lightseagreen { background-color: lightseagreen; }
+.peachpuff { background-color: peachpuff; }
+.lightsalmon { background-color: lightsalmon; }
+.lightcyan { background-color: lightcyan; }
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
