@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Clinic</title>
+    <style>
+  
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #2e2e3e; }
+        a { text-decoration: none; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+
+        .header-bg { background-color: #f3b904; padding: 15px 0; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .logo-img { height: 60px; }
+        .navi { display: flex; list-style: none; flex-wrap: wrap; gap: 25px; }
+        .navi li { color: white; font-weight: bold; font-size: 18px; cursor: pointer; transition: color 0.3s; }
+        .navi li:hover { color: #000; }
+
+        .hero-wrapper { background-color: #fcc302; overflow: hidden; }
+        .hero-content { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 40px 0; gap: 30px; }
+        .hero-text { flex: 1; color: white; min-width: 280px; }
+        .hero-text h1 { font-size: 55px; font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+        .hero-text p { font-size: 16px; margin-bottom: 25px; }
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-cyan, .btn-outline { padding: 12px 30px; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+        .btn-cyan { background-color: #00bcd4; color: white; }
+        .btn-cyan:hover { background-color: #0097a7; }
+        .btn-outline { border: 2px solid white; color: white; }
+        .btn-outline:hover { background-color: white; color: #fcc302; }
+        .hero-dog { flex: 1; display: flex; justify-content: center; align-items: flex-end; min-width: 280px; }
+
+
+        .service-section { padding: 80px 0; }
+        .service-section .flex-row { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; }
+        .service-text { flex: 1; min-width: 280px; }
+        .service-text h2 { font-size: 40px; margin-bottom: 20px; }
+        .btn-yellow-solid { display: inline-block; background-color: #fcc302; color: white; padding: 15px 35px; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+        .btn-yellow-solid:hover { background-color: #e6a800; }
+        .service-visual { flex: 1; min-width: 280px; }
+        .video-box { position: relative; box-shadow: 15px 15px 0px #fcc302; border-radius: 5px; overflow: hidden; }
+
+
+        .cards-section { background-color: #fcc302; padding: 80px 20px; text-align: center; }
+        .section-header { max-width: 800px; margin: 0 auto 50px auto; color: white; }
+        .section-header h2 { font-size: 45px; font-weight: 900; margin-bottom: 15px; }
+        .cards-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .card { padding: 20px; flex: 1 1 250px; max-width: 300px; color: #fbfbff; transition: transform 0.3s; cursor: pointer; text-align: left; }
+        .card:hover { transform: translateY(-5px); }
+        .card-frame { border-radius: 5px; overflow: hidden; margin-bottom: 15px; }
+        .card h3 { font-size: 24px; margin-bottom: 10px; font-weight: bold; }
+        .card  { text-align: center; }
+
+        @media (max-width: 768px) {
+            .hero-content, .service-section .flex-row { flex-direction: column; text-align: center; }
+            .hero-text h1 { font-size: 36px; }
+            .service-text h2 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-bg">
+    <div class="container header-flex">
+        <img src="logo.png" alt="Logo" class="logo-img">
+        <nav>
+            <ul class="navi">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero-wrapper">
+    <section class="container hero-content">
+        <div class="hero-text">
+            <h1>First I wanted <br> to be a veterinarian</h1>
+            <p>Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour randomised words.</p>
+            <div class="btn-group">
+                <a href="#" class="btn-cyan">Contact Us</a>
+                <a href="#" class="btn-outline">Our Service</a>
+            </div>
+        </div>
+        <div class="hero-dog">
+            <img src="blackdog.jpg" alt="Black Dog">
+        </div>
+    </section>
+</div>
+
+<section class="service-section">
+    <div class="container flex-row">
+        <div class="service-text">
+            <h2>As a veterinarian and <br> lover of animals.</h2>
+            <p>Lorem Ipsum available but the majority suffered alteration in some form, by humour randomised words.</p>
+            <a href="#" class="btn-yellow-solid">Our Service</a>
+        </div>
+        <div class="service-visual">
+            <div class="video-box">
+                <img src="german-dog.jpg" alt="German Dog">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cards-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-frame"><img src="col1.jpg" alt="Veterinarian"></div>
+                <h3>Veterinarian</h3>
+                <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+            </div>
+            <div class="card">
+                <div class="card-frame"><img src="col2.jpg" alt="Vaccination Care"></div>
+                <h3>Vaccination Care</h3>
+                <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+            </div>
+            <div class="card">
+                <div class="card-frame"><img src="col3.jpg" alt="Dental Care"></div>
+                <h3>Dental Care</h3>
+                <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
